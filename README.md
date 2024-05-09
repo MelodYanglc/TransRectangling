@@ -16,7 +16,13 @@ We use the DIS-D dataset to train and evaluate our method. Please refer to [DIR-
 * tensorboard 2.9.0
 
 We implement this work with Ubuntu, 2080Ti, and CUDA11. Refer to [environment.yml]() for more details.
+## Train
+Step 1: Train the network
+Modify the 'utils/constant.py' to set the 'GRID_W'"GRID_H"'GPU'. In our experiment, we set"GRID_W' to 8 and 'GRID_H' to 6.
+Step 2: Change the path to your own file, then run the train.py file
 
+## Test
+Step 1: Change the path to your own file, then run the test.py file
 
 ## Meta
 If you have any questions about this project, please feel free to drop me an email.
