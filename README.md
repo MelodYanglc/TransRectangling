@@ -2,7 +2,8 @@
 <p align="center">Lichun Yang', Bin Tian*, Tianyin Zhang', Jiu Yong*, Jianwu Dang*</p>
 <p align="center">* the School of Electronic and Information Engineering, Lanzhou Jiaotong University</p>
 <p align="center">' the Key Lab of Opt-Electronic Technology and Intelligent Control of Ministry of Education, Lanzhou Jiaotong University</p>
-![image](./1.png)
+
+![image](./main/1.png)
 
 ## Datasets(DIR-D)
 We use the DIS-D dataset to train and evaluate our method. Please refer to [DIR-D](https://github.com/nie-lang/DeepRectangling) for more details about this dataset
