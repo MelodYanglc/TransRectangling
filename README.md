@@ -4,8 +4,8 @@
 <p align="center">' the Key Lab of Opt-Electronic Technology and Intelligent Control of Ministry of Education, Lanzhou Jiaotong University</p>
 
 
-## Datasets(DIS-D)
-We use the DIS-D dataset to train and evaluate our method. Please refer to [UDls](https://github.com/nie-lang/DeepRectangling) for more details about this dataset
+## Datasets(DIR-D)
+We use the DIS-D dataset to train and evaluate our method. Please refer to [DIR-D](https://github.com/nie-lang/DeepRectangling) for more details about this dataset
 
 
 ## Code
