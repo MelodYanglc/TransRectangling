@@ -22,6 +22,7 @@ Modify the data loading path inside the test.py file to your own dataset storage
 
 Besides, if you want to see the results after the reconstruction of the assisted learning network, comment out line 41 of the code in the test.py file and uncomment line 42.
 
+## Additional Explanations
 It should be added that we did not use the output of the assisted network because we thought that the results after the Assisted Learning Network generated information that was not present in the original image, which was contrary to our original intention of rectangling the original image based only on its content information. (Although the SSIM and PSNR metrics of the reconstructed image after this network would be higher.)
 
 ## Meta
