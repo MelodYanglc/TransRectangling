@@ -4,7 +4,7 @@
 <p align="center">' the Key Lab of Opt-Electronic Technology and Intelligent Control of Ministry of Education, Lanzhou Jiaotong University</p>
 
 ## Datasets(DIR-D)
-We use the DIS-D dataset to train and evaluate our method. Please refer to [DIR-D](https://github.com/nie-lang/DeepRectangling) for more details about this dataset
+We use the DIR-D dataset to train and evaluate our method. Please refer to [DIR-D](https://github.com/nie-lang/DeepRectangling) for more details about this dataset
 
 
 ## Code
@@ -14,14 +14,15 @@ We use the DIS-D dataset to train and evaluate our method. Please refer to [DIR-
 * scikit-image 0.15.0
 * tensorboard 2.9.0
 
-We implement this work with Ubuntu, 2080Ti, and CUDA11. Refer to [environment.yml]() for more details.
-## Train
-Step 1: Train the network
-Modify the 'utils/constant.py' to set the 'GRID_W'"GRID_H"'GPU'. In our experiment, we set"GRID_W' to 8 and 'GRID_H' to 6.
-Step 2: Change the path to your own file, then run the train.py file
+## Training
+Modify the 'utils/constant.py' to set the 'GRID_W'"GRID_H"'GPU'. In our experiment, we set"GRID_W' to 8 and 'GRID_H' to 6. Addionally, modify the data loading path inside the train.py file to your own dataset storage path. Then run the train.py file to train the model.
 
-## Test
-Step 1: Change the path to your own file, then run the test.py file
+## Testing
+Modify the data loading path inside the test.py file to your own dataset storage path. Then run the test.py file to test the model.
+
+Besides, if you want to see the results after the reconstruction of the assisted learning network, comment out line 41 of the code in the test.py file and uncomment line 42.
+
+It should be added that we did not use the output of the assisted network because we thought that the results after the Assisted Learning Network generated information that was not present in the original image, which was contrary to our original intention of rectangling the original image based only on its content information. (Although the SSIM and PSNR metrics of the reconstructed image after this network would be higher.)
 
 ## Meta
 If you have any questions about this project, please feel free to drop me an email.
